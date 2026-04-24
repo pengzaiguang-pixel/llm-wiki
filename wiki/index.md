@@ -13,6 +13,8 @@
 | [[quantitative-trading-notes]] | # 量化交易笔记 ## 摘要 一份关于量化交易策略、风险平价模型、因子投资和宏观分析框架的详细笔记 | 2026-04-23 |
 | [[financial-cognitive-framework-notes]] | # 金融认知与分析框架笔记 ## 摘要 一份关于金融市场核心认知、分析框架、估值方法和大类资产定价的综合性笔记 | 2026-04-23 |
 | [[macro-cycle-framework-notes]] | # 大周期理论与宏观分析框架笔记 ## 摘要 一份关于达里奥大周期理论的详细笔记，涵盖长期债务周期、社会内部秩序周期、国际外部秩序周期三个维度的分析框架 | 2026-04-23 |
+| [[charlie-munger-investment-wisdom-0423]] | 介绍查理·芒格的投资智慧和人生哲学，包括资产与负债的区别、收入来源的本质、复利的力量、风险的认知、社交圈的重要性等方面 | 2026-04-24 |
+| [[geopolitical-oil-crisis-analysis-0424]] | 分析美以与伊朗战争对全球石油市场和供应链的严重影响，预测石油储备消耗和实物短缺危机的可能性，并探讨相关产业链的投资机会 | 2026-04-24 |
 
 ## 实体
 
@@ -36,6 +38,8 @@
 | [[MLF]] | Entity | MLF 相关信息 |
 | [[SLF]] | Entity | SLF 相关信息 |
 | [[PE]] | Entity | PE 相关信息 |
+| [[PE-Ratio]] | Entity | 市盈率（Price-to-Earnings Ratio），股票估值的重要指标 |
+| [[PB-Ratio]] | Entity | 市净率（Price-to-Book Ratio），股票估值的重要指标 |
 | [[TTM]] | Entity | TTM 相关信息 |
 | [[AAA]] | Entity | AAA 相关信息 |
 | [[ECB]] | Entity | ECB 相关信息 |
@@ -79,6 +83,16 @@
 | [[债务违约重组]] | Entity | 债务人无法全额偿还债务时，通过与债权人协商或单方面宣布来减少债务的方式 |
 | [[财富转移印钞]] | Entity | 中央银行通过"印钞"（量化宽松等方式）来购买资产和政府债务的去杠杆化方式 |
 | [[财富再分配]] | Entity | 通过税收等政策将财富从富人转移到穷人，以缓解危机中社会矛盾的方式 |
+| [[Charlie-Munger]] | Entity | 查理·芒格，美国著名投资人，伯克希尔·哈撒韦公司副主席，沃伦·巴菲特的长期商业伙伴 |
+| [[Warren-Buffett]] | Entity | 沃伦·巴菲特，美国著名投资人、企业家和慈善家，"奥马哈先知"，伯克希尔·哈撒韦公司CEO |
+| [[Iran-War-Impact]] | Entity | 美以与伊朗战争对全球石油市场和供应链的严重影响 |
+| [[Oil-Crisis]] | Entity | 石油危机，由供应中断、需求冲击或价格波动导致的全球或区域性经济危机 |
+| [[Supply-Chain-Disruption]] | Entity | 供应链中断，由外部冲击导致的原材料供应、生产制造、物流运输等环节异常现象 |
+| [[五步分析框架]] | Entity | 五步分析框架（五看），一种系统性的投资分析方法 |
+| [[四维分析框架]] | Entity | 四维分析框架，宏观经济分析方法 |
+| [[投资市场流派]] | Entity | 投资市场流派，不同投资理念和策略方法的分类 |
+| [[投资概率分析]] | Entity | 投资概率分析，基于数学概率理论的投资决策方法 |
+| [[美林时钟]] | Entity | 美林时钟，经典的资产配置理论，通过经济增长和通胀划分经济周期 |
 
 ## 概念
 
@@ -97,6 +111,24 @@
 | [[批判性思维]] | Concept | 在金融分析和投资决策中保持理性、客观和科学态度的重要思维方式 |
 | [[大周期理论]] | Concept | 瑞·达利欧提出的宏观经济分析框架，认为历史会以周期性模式重演，通过三个维度分析经济体发展阶段 |
 | [[宏观分析框架]] | Concept | 用于分析和理解宏观经济运行规律的系统性方法，帮助识别当前经济所处的周期阶段 |
+| [[entity-standardization-guidelines]] | Concept | 资产配置与宏观分析实体标准化指南，解决实体识别过程中的不规范问题 |
+| [[investment-framework-probability-analysis]] | Concept | 投资框架与概率分析体系，涵盖从宏观周期到微观操作的多层次分析体系 |
+| [[investment-strategy-deep-dive]] | Concept | 投资策略深度解析与实战体系，涵盖三要素、市场流派、交易系统等内容 |
+| [[investment-analysis-full-process]] | Concept | 投资分析全流程，从情报收集到动态预判的五层级分析体系 |
+| [[asset-allocation-risk-management]] | Concept | 资产配置与风险管理完整框架，从目标设定到执行流程 |
+| [[knowledge-structure-overview]] | Concept | LLM Wiki知识结构体系，包含当前知识分类、组织方式及优化建议 |
+| [[Charlie-Munger-Investment-Philosophy]] | Concept | 查理·芒格投资哲学，一套基于理性、数学和普世智慧的投资理念体系 |
+| [[Asset-vs-Liability]] | Concept | 资产与负债的区别，芒格定义：凡把钱放进你口袋的东西叫资产，凡把钱从你口袋掏出的东西叫负债 |
+| [[Circle-of-Competence]] | Concept | 能力圈概念，个人或机构能够理解并有效评估的特定领域或行业范围 |
+| [[Market-Valuation-Dashboard]] | Concept | 市场估值仪表盘，一种综合性的市场分析工具，用于展示各类资产的估值状态和投资机会 |
+| [[Valuation-Methods]] | Concept | 估值方法，评估资产内在价值的各种技术和模型的总称 |
+| [[Index-Funds]] | Concept | 指数基金，被动投资工具，旨在复制特定市场指数的表现 |
+| [[PE-Ratio]] | Concept | 市盈率，股价与每股收益的比率，是股票估值的重要指标 |
+| [[PB-Ratio]] | Concept | 市净率，股价与每股净资产的比率，用于评估股票的资产价值 |
+| [[Commodity-Shortage]] | Concept | 大宗商品短缺，由供应不足、需求激增或供应链中断导致的基础原材料、能源和农产品等大宗商品供不应求的现象 |
+| [[Valuation-Methods]] | Concept | 估值方法，评估资产、公司或投资项目内在价值的各种技术和模型 |
+| [[Asset-Allocation]] | Concept | 资产配置，将投资组合资金分配到不同资产类别的过程 |
+| [[Index-Funds]] | Concept | 指数基金，被动投资工具，旨在复制特定市场指数的表现 |
 
 ## 综合分析
 
@@ -104,45 +136,3 @@
 |------|------|------|
 | [[macro-framework-and-asset-allocation]] | 宏观经济框架与资产配置策略综合分析 | 将宏观经济分析四维框架与大类资产配置策略相结合，形成一套完整的投资决策体系 |
 | [[advanced-asset-allocation-framework]] | 高级资产配置框架：宏观分析与投资实践深度融合 | 深入探讨宏观经济四维分析框架与大类资产配置策略的融合，构建动态、系统化的投资决策体系 |
-
-## 概念
-
-| 页面 | 分类 | 摘要 |
-|------|------|------|
-| [[entity-standardization-guidelines]] | Concept | 资产配置与宏观分析实体标准化指南，解决实体识别过程中的不规范问题 |
-| [[investment-framework-probability-analysis]] | Concept | 投资框架与概率分析体系，涵盖从宏观周期到微观操作的多层次分析体系 |
-| [[investment-strategy-deep-dive]] | Concept | 投资策略深度解析与实战体系，涵盖三要素、市场流派、交易系统等内容 |
-| [[investment-analysis-full-process]] | Concept | 投资分析全流程，从情报收集到动态预判的五层级分析体系 |
-| [[asset-allocation-risk-management]] | Concept | 资产配置与风险管理完整框架，从目标设定到执行流程 |
-| [[knowledge-structure-overview]] | Concept | LLM Wiki知识结构体系，包含当前知识分类、组织方式及优化建议 |
-
-## 实体
-
-| 页面 | 类型 | 摘要 |
-|------|------|------|
-| [[PMI]] | Entity | 采购经理人指数，经济领先指标 |
-| [[GDP]] | Entity | 国内生产总值，衡量经济总量 |
-| [[CPI]] | Entity | 消费者价格指数，衡量通胀水平 |
-| [[SHIBOR]] | Entity | 上海银行间同业拆放利率 |
-| [[OFR]] | Entity | 联邦基金利率 |
-| [[PPI]] | Entity | 生产者价格指数 |
-| [[PCE]] | Entity | 个人消费支出指数 |
-| [[ISM]] | Entity | 美国供应管理协会 |
-| [[FOMC]] | Entity | 联邦公开市场委员会 |
-| [[IFO]] | Entity | 德国ifo经济研究所 |
-| [[TIPS]] | Entity | 通胀保值债券 |
-| [[VIX]] | Entity | 波动率指数，市场恐慌指标 |
-| [[大类资产配置]] | Entity | 投资组合管理的核心概念 |
-| [[大类资产配置策略]] | Entity | 资产配置的方法论 |
-| [[四维分析框架]] | Entity | 宏观经济分析的四维框架 |
-| [[HICP]] | Entity | 调和消费者物价指数 |
-| [[MLF]] | Entity | 中期借贷便利 |
-| [[SLF]] | Entity | 常备借贷便利 |
-| [[PE]] | Entity | 市盈率 |
-| [[TTM]] | Entity | 滚动市盈率 |
-| [[AAA]] | Entity | 最高级别信用评级 |
-| [[ECB]] | Entity | 欧洲中央银行 |
-| [[投资概率分析]] | Entity | 投资概率分析方法及相关概念 |
-| [[五步分析框架]] | Entity | 五步分析框架（五看）投资分析方法 |
-| [[美林时钟]] | Entity | 美林时钟资产配置理论 |
-| [[投资市场流派]] | Entity | 投资市场流派分类及相关概念 |

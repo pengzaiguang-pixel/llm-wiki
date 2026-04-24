@@ -35,6 +35,8 @@ node .claude/skills/llm-wiki/llm-wiki-engine-enhanced.mjs ingest <source-file-pa
 - 从 `raw/articles/` 读取源文档
 - 在 `wiki/sources/` 创建带YAML frontmatter的源摘要页面
 - 识别并更新/创建实体和概念页面
+- 提取并下载页面中的图片资源到 `raw/assets/` 目录
+- 从图片中提取有价值的知识内容并整合到相应wiki页面
 - 更新交叉引用和索引（按规范格式）
 - 记录操作日志（按规范格式）
 - 可选：更新QMD索引
@@ -58,8 +60,33 @@ node .claude/skills/llm-wiki/llm-wiki-engine-enhanced.mjs lint
 - 查找孤立页面
 - 检查缺失的交叉引用
 - 检查过时声明
+- 检查未引用的图片资源
 - 生成健康报告
 - 记录到日志
+
+## 图片资源处理
+
+当处理网页内容时，系统会：
+
+1. **提取图片URL**:
+   - 从网页HTML中提取所有图片元素的src属性
+   - 过滤掉图标、表情符号等非主要内容图片
+
+2. **下载图片**:
+   - 使用内置脚本下载图片到 `raw/assets/` 目录
+   - 使用描述性文件名，如 `{内容主题}-{序号}.{扩展名}`
+   - 保留原始扩展名以确保正确的MIME类型
+
+3. **提取知识**:
+   - 从图片中提取有价值的信息和知识
+   - 将图片内容转化为结构化的文字内容
+   - 存储到相应的wiki页面中
+
+4. **更新页面**:
+   - 将图片中的信息整合到源文档摘要、实体和概念页面中
+   - 重点关注从图片中提取的核心知识点
+
+**重要说明**：知识库页面重点是从图片中提取和编译有价值的知识内容，而非存储对图片的引用。图片文件存储在 `raw/assets/` 目录中，作为原始资料参考，而Wiki页面则将图片中的信息转化为结构化的知识内容。
 
 ## 文件结构
 
@@ -67,6 +94,7 @@ node .claude/skills/llm-wiki/llm-wiki-engine-enhanced.mjs lint
 - `llm-wiki-engine-enhanced.mjs` - 增强版核心处理引擎
 - `README.md` - 使用说明
 - `CLAUDE.md` - 模式定义（在项目根目录）
+- `wiki_image_downloader.py` - 图片下载脚本
 
 ## 使用流程
 
@@ -82,7 +110,8 @@ node .claude/skills/llm-wiki/llm-wiki-engine-enhanced.mjs lint
 llm-wiki/
 ├── raw/                    # 原始资料（用户放入，LLM 只读）
 │   ├── articles/
-│   └── assets/            # 图片等附件
+│   ├── assets/            # 图片等附件
+│   └── sources/           # 源文档
 ├── wiki/                   # LLM 维护的知识库
 │   ├── index.md           # 内容索引目录
 │   ├── log.md             # 操作日志（时间线）
@@ -91,13 +120,14 @@ llm-wiki/
 │   ├── concepts/          # 概念页面（理论、方法、术语等）
 │   └── synthesis/         # 综合分析页面
 └── .claude/skills/llm-wiki/  # 本 skill
+    └── wiki_image_downloader.py  # 图片下载脚本
 ```
 
 ## 增强特性
 
 ### YAML Frontmatter 支持
 - 所有页面支持YAML frontmatter元数据
-- 包括标题、日期、来源、标签等信息
+- 包括标题、日期、来源、标签、资源等信息
 
 ### QMD 集成
 - 支持使用QMD进行语义搜索
@@ -111,3 +141,8 @@ llm-wiki/
 ### 规范化索引格式
 - 按照表格格式组织索引
 - 包含摘要和日期信息
+
+### 图片资源管理
+- 自动提取网页中的图片资源
+- 智能命名和分类存储
+- 自动生成图片引用和关联

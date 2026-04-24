@@ -101,9 +101,25 @@ When a new source is added:
 2. Create a source summary page in `wiki/sources/`
 3. Identify and update/create entity pages in `wiki/entities/`
 4. Identify and update/create concept pages in `wiki/concepts/`
-5. Update cross-references across affected pages
-6. Update the index in `wiki/index.md`
-7. Add an entry to `wiki/log.md`
+5. Download and save any relevant images to `raw/assets/`
+6. Update cross-references across affected pages
+7. Update the index in `wiki/index.md`
+8. Add an entry to `wiki/log.md`
+
+### Image Handling
+When processing web content:
+
+1. Extract image URLs from the webpage
+2. Download images to `raw/assets/` directory for reference
+3. Use descriptive filenames based on content
+4. Extract valuable knowledge and information from images
+5. Integrate extracted knowledge into wiki pages as structured content
+
+### 图片资源处理说明
+- 图片文件存储在 `raw/assets/` 目录中，作为原始资料参考
+- Wiki页面重点是从图片中提取和编译有价值的知识内容
+- 图片仅作为辅助资料，核心内容应转化为文字形式存储在Wiki页面中
+- 知识库存储的是从图片中提取的结构化知识，而非对图片的引用
 
 ### Query Operation
 When answering questions:
@@ -120,6 +136,7 @@ Periodically check the wiki for:
 - Orphan pages with no inbound links
 - Missing cross-references
 - Data gaps that could be filled
+- Unreferenced assets in the assets directory
 
 ## Index Maintenance
 
@@ -146,3 +163,6 @@ what was discovered, and any notable outcomes.
 4. Link to related entities and concepts using [[Wikilinks]]
 5. When creating new content from queries, consider if it should be saved back to the wiki
 6. Regularly perform lint operations to maintain quality
+7. Always download and reference relevant images from source materials
+8. Use descriptive filenames for assets that relate to the content
+9. Include asset references in the YAML frontmatter of relevant pages

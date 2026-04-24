@@ -2,6 +2,88 @@
 
 This is the chronological log of all operations on the wiki. Append-only record of what happened and when.
 
+## [2026-04-24] lint | Wiki Health Check & Repair
+
+### Issues Found:
+- Orphan Pages: 5
+- Missing Cross-References: 3
+- Outdated Claims: 0
+
+### Orphan Pages:
+- [[五步分析框架]]
+- [[四维分析框架]] 
+- [[投资市场流派]]
+- [[投资概率分析]]
+- [[美林时钟]]
+
+### Missing Cross-References:
+- [[Valuation-Methods]]
+- [[Asset-Allocation]]
+- [[Index-Funds]]
+
+### Actions Taken:
+- Added orphan pages to index
+- Created missing cross-reference pages
+- Updated all affected links
+
+---
+
+## [2026-04-24] lint | Wiki Health Check
+
+### Issues Found:
+- Orphan Pages: 0
+- Missing Cross-References: 0
+- Outdated Claims: 0
+
+### Orphan Pages:
+None
+
+### Missing Cross-References:
+None
+
+### Outdated Claims:
+None
+
+---
+
+## [2026-04-24] ingest | 地缘政治石油危机分析文章
+
+- 添加了源文档摘要: [[geopolitical-oil-crisis-analysis-0424]]
+- 创建了3个实体页面: [[Iran-War-Impact]], [[Oil-Crisis]], [[Supply-Chain-Disruption]]
+- 创建了1个概念页面: [[Commodity-Shortage]]
+- 更新了索引文件，添加了新的源文档、实体和概念链接
+- 分析了美以与伊朗战争对全球石油市场和供应链的严重影响
+
+---
+
+## [2026-04-24] ingest | PE和PB比率实体页面
+
+- 创建了2个实体页面: [[PE-Ratio]], [[PB-Ratio]]
+- 详细定义了市盈率和市净率的概念、计算方法、估值意义和应用场景
+- 更新了索引文件，添加了新的实体页面链接
+- 完善了估值指标相关知识体系
+
+---
+
+## [2026-04-24] ingest | 市场估值仪表盘概念
+
+- 创建了概念页面: [[Market-Valuation-Dashboard]]
+- 从文章中的图片提取了关于市场估值仪表盘和指数基金估值表的知识内容
+- 更新了索引文件，添加了新的概念页面链接
+- 丰富了投资分析工具相关知识
+
+---
+
+## [2026-04-24] ingest | 查理·芒格投资智慧文章
+
+- 添加了源文档摘要: [[charlie-munger-investment-wisdom-0423]]
+- 创建了2个实体页面: [[Charlie-Munger]], [[Warren-Buffett]]
+- 创建了3个概念页面: [[Charlie-Munger-Investment-Philosophy]], [[Asset-vs-Liability]], [[Circle-of-Competence]]
+- 更新了索引文件，添加了新的源文档、实体和概念链接
+- 所有新增页面均已建立内部链接关系
+
+---
+
 ## [2026-04-23] ingest | 大周期理论与宏观分析框架笔记
 
 - 添加了源文档摘要: [[macro-cycle-framework-notes]]
@@ -66,6 +148,7 @@ None
 ---
 
 
+
 ## [2026-04-21] ingest | 大类资产配置策略
 
 - 添加了源文档摘要
@@ -74,6 +157,7 @@ None
 - 发现矛盾: 无
 
 ---
+
 
 
 ## [2026-04-21] lint | Wiki Health Check
@@ -105,6 +189,7 @@ None
 ---
 
 
+
 ## [2026-04-22] lint | Wiki Health Check
 
 ### Issues Found:
@@ -124,6 +209,7 @@ None
 ---
 
 
+
 ## [2026-04-22] ingest | 高级资产配置框架：宏观分析与投资实践深度融合
 
 - 创建了新的综合分析页面
@@ -132,6 +218,7 @@ None
 - 整合了多个相关源文档的信息
 
 ---
+
 
 ## [2026-04-22] cleanup | 实体页面标准化
 
@@ -143,6 +230,7 @@ None
 
 ---
 
+
 ## [2026-04-22] ingest | 投资框架与概率分析体系
 
 - 创建了投资分析框架的综合页面
@@ -153,6 +241,7 @@ None
 
 ---
 
+
 ## [2026-04-22] ingest | 投资相关实体页面
 
 - 创建了投资概率分析实体页面
@@ -161,6 +250,7 @@ None
 - 更新了索引文件以包含新实体
 
 ---
+
 
 ## [2026-04-22] ingest | 投资策略深度解析与实战体系
 
@@ -172,6 +262,7 @@ None
 
 ---
 
+
 ## [2026-04-22] ingest | 投资市场流派实体页面
 
 - 创建了投资市场流派实体页面
@@ -179,6 +270,7 @@ None
 - 更新了索引文件以包含新实体
 
 ---
+
 
 ## [2026-04-22] ingest | 投资分析全流程：从情报收集到动态预判
 
@@ -190,6 +282,7 @@ None
 
 ---
 
+
 ## [2026-04-22] ingest | 资产配置与风险管理：从目标到执行的完整框架
 
 - 创建了资产配置与风险管理的综合页面
@@ -200,6 +293,7 @@ None
 
 ---
 
+
 ## [2026-04-22] cleanup | 知识结构体系优化
 
 - 创建了知识结构体系概述页面
@@ -208,6 +302,7 @@ None
 - 更新了索引文件以包含新页面
 
 ---
+
 
 ## [2026-04-22] ingest | LLM Wiki 总体概览
 

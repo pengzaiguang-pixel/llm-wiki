@@ -1,5 +1,6 @@
 # Obsidian vault files
 .obsidian/
+.playwright-mcp/
 
 # Temporary files
 *.tmp
