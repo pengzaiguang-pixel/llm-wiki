@@ -123,6 +123,7 @@
 | [[Market-Valuation-Dashboard]] | Concept | 市场估值仪表盘，一种综合性的市场分析工具，用于展示各类资产的估值状态和投资机会 |
 | [[Valuation-Methods]] | Concept | 估值方法，评估资产内在价值的各种技术和模型的总称 |
 | [[Index-Funds]] | Concept | 指数基金，被动投资工具，旨在复制特定市场指数的表现 |
+| [[DCF现金流贴现模型]] | Concept | DCF现金流贴现模型，基于未来现金流现值的绝对估值方法 |
 | [[PE-Ratio]] | Concept | 市盈率，股价与每股收益的比率，是股票估值的重要指标 |
 | [[PB-Ratio]] | Concept | 市净率，股价与每股净资产的比率，用于评估股票的资产价值 |
 | [[Commodity-Shortage]] | Concept | 大宗商品短缺，由供应不足、需求激增或供应链中断导致的基础原材料、能源和农产品等大宗商品供不应求的现象 |
