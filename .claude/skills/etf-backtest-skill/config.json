@@ -1,0 +1,60 @@
+{
+  "name": "etf-backtest-skill",
+  "version": "1.0.0",
+  "description": "输入“回测 + 6位ETF代码”，基于天天基金 FUND_NAV_INFO 拉取 3n/5n/10n 的累计净值序列（优先 LJJZ，缺失用 DWJZ），计算最大回撤、年化收益率、年化波动率、年化夏普率（rf=2%，252交易日），并输出表格与口径说明。",
+  "author": "LLM Wiki",
+  "license": "MIT",
+  "requirements": {
+    "environment": [
+      "TTFUND_APIKEY"
+    ],
+    "api_access": [
+      "https://skills.tiantianfunds.com/ai-smart-skill-service/openapi/skill/invoke"
+    ]
+  },
+  "features": [
+    "etf_backtest"
+  ],
+  "api_mapping": {
+    "FUND_BASE_INFOS": {
+      "version": "1.1.0",
+      "description": "基金基础信息查询"
+    },
+    "FUND_MANAGER_INFO": {
+      "version": "1.0.0",
+      "description": "基金经理信息查询"
+    },
+    "FUND_CONDITION_SELECT": {
+      "version": "1.1.0",
+      "description": "条件选基"
+    },
+    "FUND_HOLDING_INFO": {
+      "version": "1.0.0",
+      "description": "基金持仓查询"
+    },
+    "FUND_HUAAN_GOLD_INFO": {
+      "version": "1.0.0",
+      "description": "黄金行情分析"
+    },
+    "FUND_TG_STRATEGY_INFO": {
+      "version": "1.0.0",
+      "description": "投顾策略查询"
+    },
+    "FUND_INDEX_INFO": {
+      "version": "1.0.0",
+      "description": "指数详情查询"
+    },
+    "FUND_NAV_INFO": {
+      "version": "1.0.0",
+      "description": "基金净值查询"
+    },
+    "MODEL_PORTFOLIO": {
+      "version": "1.0.0",
+      "description": "模拟组合管理"
+    },
+    "FUND_FAVOR_ZX": {
+      "version": "1.0.0",
+      "description": "自选基金查询"
+    }
+  }
+}

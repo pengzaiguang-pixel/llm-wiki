@@ -3,20 +3,22 @@
 # 天天基金技能执行脚本
 # 根据用户查询执行相应的API调用
 
-QUERY="$1"
+# 接收整段查询（避免只取到第一个词）
+QUERY="$*"
 
 # 获取脚本所在目录的绝对路径
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # 从脚本目录向上三级到达项目根目录
 ENV_FILE="$SCRIPT_DIR/../../../.env"
 if [ -f "$ENV_FILE" ]; then
+  # shellcheck disable=SC2046
   export $(grep -v '^#' "$ENV_FILE" | xargs)
 fi
 
 # 检查API密钥是否设置
 if [ -z "$TTFUND_APIKEY" ]; then
-  echo "⚠️ 未检测到环境变量 TTFUND_APIKEY。"
-  echo "请先前往天天基金 App 搜索 skills，获取当前用户对应的 apikey。"
+  echo "⚠️ 未检测到环境变量 TTFUND_APIKEY（未从环境变量或 $ENV_FILE 读取到）。"
+  echo "请先在项目根目录创建/更新 .env：TTFUND_APIKEY=... 然后重启 Claude Code。"
   exit 1
 fi
 
